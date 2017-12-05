@@ -14,8 +14,8 @@ public class Protagonist extends Character{
 	}
 
 	public void specialize(){
-		defense -= 10;
-		attack += 0.5;
+		defense = defense / 2 -5;
+		attack = attack * 2;
 	}
 
 	public void normalize() {
