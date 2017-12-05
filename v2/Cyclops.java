@@ -1,10 +1,10 @@
 public class Cyclops extends Monster{
 
 	public Cyclops(){
-		health = 150;
+		health = 155;
 		strength = 20 + (int) Math.random() * 45;
-		defense = 20;
-		attack = 1.0;
+		defense = 25;
+		attack = 1.5;
 	}
 
 }
