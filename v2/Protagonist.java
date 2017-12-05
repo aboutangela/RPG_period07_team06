@@ -2,7 +2,7 @@ public class Protagonist extends Character{
 	private String name;
 
 	public Protagonist( String input){
-		name= input;
+		name = input;
 		health = 125;
 		strength = 100;
 		defense = 40;
@@ -22,4 +22,9 @@ public class Protagonist extends Character{
 		defense = 40;
 		attack = 0.4;
 	}
+
+	public String toString() {
+		return name + " " + health + " " + strength + " " + defense + " " + attack;
+	}
+
 }
