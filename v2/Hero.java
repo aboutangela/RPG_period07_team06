@@ -1,9 +1,10 @@
 public class Hero extends Protagonist {
-    public Hero(String input) {
-	name = input;
-       	health = 140;
-	strength = 115;
+    public Hero() {
+	super(name);
        	defense = 55;
-	attack = 0.55;
+    }
+
+    public String toString() {
+	return "Hero: " + super.toString();
     }
 }
