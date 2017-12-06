@@ -7,4 +7,8 @@ public class Hellhound extends Monster{
 		attack = 1.9;
 	}
 
+	public String toString() {
+		return "Hellhound: " + super.toString();
+    }	
+	
 }

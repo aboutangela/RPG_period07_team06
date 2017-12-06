@@ -7,4 +7,8 @@ public class Hydra extends Monster{
 		attack = 1.7;
 	}
 
+	public String toString() {
+		return "Hydra: " + super.toString();
+    }	
+	
 }

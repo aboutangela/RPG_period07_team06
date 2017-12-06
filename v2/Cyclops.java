@@ -7,4 +7,8 @@ public class Cyclops extends Monster{
 		attack = 1.5;
 	}
 
+	public String toString() {
+		return "Cyclops: " + super.toString();
+    }	
+	
 }
