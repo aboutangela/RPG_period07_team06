@@ -1,9 +1,7 @@
 public class Cyclops extends Monster{
 
 	public Cyclops(){
-		health = 155;
-		strength = 20 + (int) Math.random() * 45;
-		defense = 25;
+		super();
 		attack = 1.5;
 	}
 

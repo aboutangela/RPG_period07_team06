@@ -8,9 +8,9 @@ public class Monster extends Character{
 	}
 
 	public String toString() {
-	    return "Health: " + health + System.lineSeperator()
-			 + "Strength:  " + strength + System.lineSeperator()
-			 + "Defense: " + defense + System.lineSeperator()
+	    return "Health: " + health + System.lineSeparator()
+			 + "Strength:  " + strength + System.lineSeparator()
+			 + "Defense: " + defense + System.lineSeparator()
 			 + "Attack:  " + attack;
 	}
 	
