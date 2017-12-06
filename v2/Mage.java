@@ -1,5 +1,5 @@
 public class Mage extends Protagonist {
-    public Mage(String input) {
+    public Mage(String name) {
 		super(name);
 		health = 130;
     }

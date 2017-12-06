@@ -1,6 +1,6 @@
 public class Hero extends Protagonist {
-    public Hero() {
-		super(name);
+    public Hero( String name) {
+	super(name);
        	defense = 55;
     }
 
