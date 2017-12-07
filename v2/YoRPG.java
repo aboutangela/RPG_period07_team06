@@ -7,6 +7,7 @@
 // shorthand, used to read from CLI
 import java.io.*;   
 import java.util.*;
+import java.util.Scanner; 
 
 public class YoRPG
 {
@@ -73,10 +74,52 @@ public class YoRPG
     } catch ( IOException e ) { }
 
     //instantiate the player's character
-    pat = new Protagonist( name );
-
+	// pat = new Protagonist( name );
+	/*
+	Scanner sc = new Scanner(System.in);
+	if (sc.equals("Hero")) {
+		pat = new Hero(name);
+	}
+	else if (sc.equals("Mage")) {
+		pat = new Mage(name);
+	}*/
+	pat = createCharacter(name);
+	
   }//end newGame()
-
+ /*=============================================
+    void createCharacter() -- instantiates character(protagonist)
+    precondition:  
+    post: according to user input, takes their protagonist suggestion and instantiates the 
+	protagonist to have the correspoding object.
+    =============================================*/
+public Protagonist createCharacter(String name){
+		String protag = "";
+		Protagonist p = null;
+		
+		System.out.println("What type of a hero are you?");
+		System.out.println(System.lineSeparator() + "Hero, Mage, or Warrior?");
+		
+		try {
+			protag = in.readLine();
+		} catch (IOException e){}
+		
+		if (protag.equals("Hero")) {
+			p = new Hero(name);
+		}
+		else if (protag.equals("Mage")) {
+			p = new Mage(name);
+		}
+		else if (protag.equals("Warrior")) {
+			p = new Warrior(name);
+		}
+		else {
+			System.out.print("Me thinks you spelled it wrong! Try again.");
+			createCharacter(name);
+		}
+		
+		return p;
+	} // end of createCharacter()
+//  System.out.println("I did it!" + protag);
 
   /*=============================================
     boolean playTurn -- simulates a round of combat
