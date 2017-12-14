@@ -5,6 +5,10 @@ public class Hero extends Protagonist {
     }
 
     public String toString() {
-		return "Hero: " + super.toString();
+		return "Hero: " + getName() + System.lineSeparator()
+		     + "Health: " + health + System.lineSeparator()
+		     + "Strength:  " + strength + System.lineSeparator()
+		     + "Defense: " + defense + System.lineSeparator()
+		     + "Attack:  " + attack;
     }
 }
