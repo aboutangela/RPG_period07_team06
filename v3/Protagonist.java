@@ -23,6 +23,7 @@ public abstract class Protagonist extends Character{
 		attack = 0.4;
 	}
 
+	// Protagonist.java:1: error: Protagonist is not abstract and does not override abstract method toString() in Protagonist
 	public abstract String toString();
 
 }
