@@ -1,4 +1,4 @@
-public class Protagonist extends Character{
+public abstract class Protagonist extends Character{
 	private String name;
 
 	public Protagonist( String input){
@@ -23,12 +23,6 @@ public class Protagonist extends Character{
 		attack = 0.4;
 	}
 
-	public String toString() {
-	    return name + System.lineSeparator()
-		+ "Health: " + health + System.lineSeparator()
-		+ "Strength:  " + strength + System.lineSeparator()
-		+ "Defense: " + defense + System.lineSeparator()
-		+ "Attack:  " + attack;
-	}
+	public abstract String toString();
 
 }
